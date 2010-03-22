@@ -160,3 +160,5 @@ function biotech_preprocess_block(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */
+
+
