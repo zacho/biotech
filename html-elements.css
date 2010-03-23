@@ -190,6 +190,8 @@
    */
   a:link
   {
+  text-decoration: none;
+  color: #0000EE;
   }
 
   a:visited
@@ -203,7 +205,49 @@
 
   a:active
   {
+  color: #0000EE;
   }
+  
+  li a.active /* The active item in a Drupal menu */
+  {
+    color: #0000EE;
+  }
+  
+  
+  /** nav & topbar links **/
+  /* The order of link states are based on Eric Meyer's article:
+   * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
+   */
+  #navbar-inner a:link, #topbar-inner a:link
+  {
+      color: #fff;
+  }
+
+  #navbar-inner a:visited, #topbar-inner a:visited,  
+  {
+      color: #fff;
+  }
+
+  #navbar-inner a:hover, 
+  #navbar-inner a:focus, 
+  #topbar-inner a:hover,  
+  #topbar-inner a:focus 
+  {
+      color: #fff;
+  }
+
+  #navbar-inner a:active,
+  #topbar-inner a:active
+  {
+    color: #fff;
+  }
+  
+  #navbar-inner li a.active, /* The active item in a Drupal menu */
+  #topbar-inner li a.active  
+  {
+    color: #fff;
+  }
+
 
 /** tables **/
   /* Override Drupal default CSS */

@@ -72,7 +72,7 @@
   {
   float: right;
   padding: 0;
-  margin: 0;
+  margin: 0.25em 0.2em 0 0;
   }
   
   #topbar-inner ul li
@@ -85,14 +85,15 @@
   {
   float: left;
   margin: 0 0.15em;
+  background: #005aab url("images/biotech-topbar-btn-bg.png") repeat-x 0 0;
   }
 
   #topbar-inner li a
   {
-  height: 2em;
-  line-height: 2em;
+  height: 1.6em;
+  line-height: 1.4em;
   float: left;
-  width: 9em;
+  width: 5em;
   display: block;
   border: 0.1em solid #dcdce9;
   color: #0d2474;
@@ -168,6 +169,7 @@
 
   #content-inner
   {
+  padding: 5px 15px 15px 15px;
   }
 
   #mission /* The mission statement of the site (displayed on homepage) */
@@ -293,6 +295,25 @@
   #primary /* Primary links */
   {
   }
+  
+  #primary li
+  {
+  margin: 0.2em 0 0 0;
+  padding: 0px;
+  }
+
+  #primary li a
+  {
+  height: 1.9em;
+  line-height: 2em;
+  float: left;
+  width: 10em;
+  display: block;
+  border-right: 0.1em solid #79ab6e;
+  color: #0d2474;
+  text-decoration: none;
+  text-align: center;
+  }
 
   #secondary /* Secondary links */
   {
@@ -333,15 +354,88 @@
 /** footer **/
   #footer
   {
+
   }
 
   #footer-inner
   {
+    height: 80px;
+    background: #fff url("images/biotech-footer.png") repeat-x 0 0;
   }
 
   #footer-message /* Wrapper for the footer message from Drupal's "Site information"
                      and for any blocks placed in the footer region */
   {
+  }
+  
+/** footerlinks **/
+  #footerlinks
+  {
+    border: 2px solid #44b025;
+    padding: 10px 10px 10px 30px;
+  }
+
+  #footerlinks-inner
+  {
+  }  
+  
+  #footerlinks-inner h2.title 
+  {
+  color: #8fd07c;
+  font-weight: normal;
+  font-size: 1.0em;
+  }  
+
+  #footerlinks-inner #block-menu-menu-home-link 
+  {
+  float: left;
+  width: 6em;
+  }
+  
+  #footerlinks-inner  #block-menu-primary-links
+  {
+  margin-top: 1.4em;
+  margin-bottom: 0em;
+  }
+  
+  #footerlinks-inner  #block-menu-primary-links ul li, #footerlinks-inner #block-menu-menu-home-link ul li
+  {
+   list-style-type: none;
+   list-style-image: none;
+  }  
+
+  #footerlinks-inner  #block-menu-primary-links ul,  #footerlinks-inner #block-menu-menu-home-link ul
+  {
+  margin: 0;
+  padding: 0;
+  }
+
+  #footerlinks-inner #block-menu-primary-links ul li
+  {
+   float: left;
+   width: 11.5em;
+  }
+  
+    #footerlinks-inner #block-menu-primary-links ul li ul li
+  {
+   clear: both;
+   margin: 0.5em 0 0 0;
+  }
+  
+  #footerlinks-inner #block-menu-primary-links ul li ul li.first
+  {
+   display: none;
+  }
+  
+  #footerlinks-inner #block-menu-primary-links ul li a
+  {
+
+  }  
+
+  #footerlinks-inner #block-menu-primary-links
+  {
+  clear: right;
+  display: inline-block;
   }
 
 /** closure **/
@@ -724,7 +818,7 @@
 
   li a.active /* The active item in a Drupal menu */
   {
-    color: #000;
+    /* moved to html-elements */
   }
 
 
