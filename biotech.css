@@ -32,11 +32,13 @@
   body
   {
     margin: 0;
-    padding: 10px;
+    background: #fff url("images/biotech-bg.png") repeat-x 0 0;
+    padding: 0px;
   }
 
   #page
   {
+  background: #fff;
   }
 
   #page-inner
@@ -47,11 +49,13 @@
 /** topbar **/
   #topbar
   {
-  position: absolute;
+  
   }
 
   #topbar-inner
   {
+    background: #005aab url("images/biotech-topbar.png") repeat-x 0 0;
+    height: 32px;
   }
 
   #topbar-inner h2.title
@@ -104,6 +108,7 @@
 
   #header-inner
   {
+  height: 140px;
   }
 
   #logo-title /* Wrapper for logo, website name, and slogan */
@@ -112,7 +117,7 @@
 
   #logo /* Wrapper for logo */
   {
-    margin: 0 10px 0 0;
+    margin: 17px 10px 0 0;
     padding: 0;
   }
 
@@ -268,6 +273,8 @@
 /** navbar **/
   #navbar
   {
+  background: #339933 url("images/biotech-navbar.png") repeat-x 0 0;
+  height: 32px;
   }
 
   #navbar-inner
@@ -295,10 +302,15 @@
   #subnavbar
   {
   }
+  
 
   #subnavbar-inner
   {
   }    
+  #subnavbar-inner .block p
+  {
+  margin: 0em;
+  }   
 
 /** sidebar-left **/
   #sidebar-left
