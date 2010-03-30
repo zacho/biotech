@@ -31,6 +31,19 @@
  Global CSS for ALL menu types
 ******************************/
 
+#navbar .block-nice_menus li /* A simple method to get navbar links to appear in one line. */
+  {
+    float: left;
+    padding: 0 0px 0 0;
+  }
+
+
+.block-nice_menus {
+margin-bottom: 0;
+
+}
+
+
 ul.nice-menu ul li {
 font-size: 0.9em;
 }
@@ -47,8 +60,8 @@ ul.nice-menu ul {
 ul.nice-menu li {
   border-bottom: 1px solid transparent;
   border-top: 1px solid transparent;
-  border-left: 0px solid #000;
-  border-right: 1px solid #000;    
+  border-left: 0px solid #79ab6e;
+  border-right: 1px solid #79ab6e;    
   border-top: 0;
   float: left;
   background-color: transparent;
@@ -60,7 +73,7 @@ ul.nice-menu li {
 }
 
 /* Overrides for Garland header. */
-#header-region ul.nice-menu li {
+ul.nice-menu li {
   margin: 0;
   /* Padding rules are needed to deal with Garland's header line-height. */
   padding-top: 0.1em;
@@ -75,8 +88,8 @@ ul.nice-menu a {
 
 ul.nice-menu ul,
 /* Repeat for Garland header. */
-#header-region ul.nice-menu ul {
-  top: 2.3em;
+ul.nice-menu ul {
+  top: 2.2em;
   left: -1px;
   border: 0;
   border-top: 1px solid #ccc;
@@ -85,13 +98,11 @@ ul.nice-menu ul,
 }
 
 /* Override for Garland header. */
-#header-region ul.nice-menu ul {
-  top: 1.7em;
+ul.nice-menu ul {
+  top: 2.2em;
 }
 
-ul.nice-menu ul li {
-min-width:16.0em;
-}
+
 
 /******************************
  VERTICAL (left/right) menus
@@ -100,19 +111,19 @@ min-width:16.0em;
 /* This is the default width of all vertical menus. */
 ul.nice-menu-right, ul.nice-menu-left,
 ul.nice-menu-right li, ul.nice-menu-left li {
-  width: 16.0em;
+  width: 12.0em;
 }
 
 /* VERTICAL menus where submenus pop RIGHT (default). */
 ul.nice-menu-right ul {
-  width: 16.0em;
-  left: 16.0em;
+  width: 12.0em;
+  left: 12.0em;
   top: -1px;
 }
 
 ul.nice-menu-right ul ul {
-  width: 16.0em;
-  left: 16.0em;
+  width: 12.0em;
+  left: 12.0em;
   top: -1px;
 }
 
@@ -130,13 +141,13 @@ ul.nice-menu-right li li.over {
 
 /* VERTICAL menus where submenus pop LEFT. */
 ul.nice-menu-left li ul {
-  width: 16.0em;
+  width: 12.0em;
   left: -12.65em;
   top: -1px;
 }
 
 ul.nice-menu-left li ul li ul {
-  width: 16.0em;
+  width: 12.0em;
   left: -12.65em;
   top: -1px;
 }
@@ -164,94 +175,138 @@ ul.nice-menu-left a, ul.nice-menu-left ul a {
 ul.nice-menu-down {
   float: left;
   border: 0;
-    z-index: 9999;
+  z-index: 9999;
 }
 
 ul.nice-menu-down li {
   border-top: 0px solid #ccc;
-    z-index: 9999;
+  z-index: 9999;
 }
 
 ul.nice-menu-down li li {
   border-top: 0;
-    z-index: 9999;
+  z-index: 9999;
 }
 
 ul.nice-menu-down ul {
   left: 0;
-  border: 1px solid #000;
-    z-index: 9999;
+  border: 1px solid #79ab6e;
+  z-index: 9999;
 }
 
 ul.nice-menu-down ul li {
   clear: both;
-    border-bottom: 1px solid #000;
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
+    border-bottom: 1px solid #79ab6e;
+    border-left: 1px solid #79ab6e;
+    border-right: 1px solid #79ab6e;
     z-index: 9999;
 }
 
 ul.nice-menu-down li ul li ul,
 /* Repeat for Garland header. */
 #header-region ul.nice-menu-down li ul li ul {
-  left: 16.0em;
+  left: 12.0em;
   top: -1px;
+  z-index: 9999;  
 }
 
 ul.nice-menu-down .menuparent a {
-  padding: 0.5em 0.9em 0.5em 0.9em;
-}
+  padding: 0.5em 0 0.5em 0;
+  width: 9.5em;
+  text-align: center;
+  z-index: 9999;  
+  }
+
+ul.nice-menu-down .menuparent ul li a {
+  padding: 0.5em 2.1em 0.5em 0.9em;
+  text-align: left;
+  z-index: 9999;  
+  }
+
 
 ul.nice-menu-down li.menuparent,
 /* Repeat for Garland header. */
-#header-region ul.nice-menu-down li.menuparent {
-  background: transparent url(images/arrow-down.png) right center no-repeat;
+ul.nice-menu-down li.menuparent {
+  background: transparent;
+  background-image: none;
+  z-index: 9999;  
+
 }
 
 ul.nice-menu-down li.menuparent:hover,
 ul.nice-menu-down li.over,
 /* Repeat for Garland header. */
-#header-region ul.nice-menu-down li.menuparent:hover,
-#header-region ul.nice-menu-down li.over {
-  background: transparent url(images/arrow-down.png) right center no-repeat;
+ul.nice-menu-down li.menuparent:hover,
+ul.nice-menu-down li.over {
+  background: transparent;
+  background-image: none;
+  z-index: 9999;  
 }
 
 ul.nice-menu-down li li.menuparent,
 /* Repeat for Garland header. */
-#header-region ul.nice-menu-down li li.menuparent {
-  background: transparent url(images/arrow-right.png) right center no-repeat;
+ul.nice-menu-down li li.menuparent {
+  background: transparent;
+  background-image: none;
+  z-index: 9999;  
 }
 
 ul.nice-menu-down li li.menuparent:hover,
 ul.nice-menu-down li li.over,
 /* Repeat for Garland header. */
-#header-region ul.nice-menu-down li li.menuparent:hover,
-#header-region ul.nice-menu-down li li.over {
-  background: transparent url(images/arrow-right.png) right center no-repeat;
+ul.nice-menu-down li li.menuparent:hover,
+ul.nice-menu-down li li.over {
+  background: transparent;
+  background-image: none;
+
 }
 
 ul.nice-menu-down ul a {
-background-color: #3d3f16;
+background-color: #fff;
 }
 
 ul.nice-menu-down ul a:link {
-background-color: #3d3f16;
+background-color: #fff;
 }
 
 ul.nice-menu-down ul a:hover {
-background-color: #2b2d0f;
+background-color: #eee;
 }
 
 ul.nice-menu-down ul li a {
-color: #000;
+color: #79ab6e;
 }
 
 ul.nice-menu-down ul li a:link {
-color: #000;
+color: #79ab6e;
 }
 
 ul.nice-menu-down ul li a:hover {
-color: #797b4c;
+color: #172154;
 }
 
+#navbar-inner .nice-menu-down ul li a.active{
+color:#172154;
+}
+
+#navbar-inner .nice-menu-down ul li a{
+color:#000;
+font-weight: normal;
+}
+
+#navbar-inner .nice-menu-down ul li a:link{
+color:#000;
+}
+
+#navbar-inner .nice-menu-down ul li a:hover{
+color:#172154;
+}
+
+#navbar-inner .nice-menu-down a:hover{
+color:#172154;
+}
+
+#navbar-inner .nice-menu-down a.active{
+color:#172154;
+}
 

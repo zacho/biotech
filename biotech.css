@@ -277,15 +277,84 @@
   {
   background: #339933 url("images/biotech-navbar.png") repeat-x 0 0;
   height: 32px;
+  z-index: 9999;
+  font-weight: bold;
   }
 
   #navbar-inner
   {
+    z-index: 9999;
+  }
+
+  #navbar-inner .title
+  {
+    display: none;
   }
 
   #search-box /* Wrapper for the search form */
   {
   }
+
+  #navbar  #search-block-form, #search-theme-form {
+  text-align: right;
+  padding-right: 5px;
+  }
+
+  #search-block-form .form-item, #search-theme-form .form-item {
+  margin: 0px;
+  
+  }
+  
+  #search-block-form .form-item label, #search-theme-form .form-item label  /* Wrapper for the search form */
+  {
+  color: #fff;
+  }  
+  
+  #search-block-form .form-item input, #search-theme-form .form-item input
+  {
+  vertical-align: top;
+  margin-top: 1px;
+  padding: 0px;
+  height: 19px;
+  width: 175px;
+  padding: 0px;
+  border: 1px solid #002D61;
+  }
+  
+  #search-theme-form, #search-block-form
+  {
+  margin-top: 4px;
+  }  
+
+  #search-block-form input.form-submit, #search-form input.form-submit,  #search-theme-form input.form-submit {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  text-indent: -9999px;
+  border: none;
+  background: url(images/biotech-magglass.png) no-repeat left top;
+  }
+  
+  #search-block-form  .block-search .form-item  textarea:focus, input:focus, #search-theme-form .block-search .form-item  textarea:focus {
+  border: 2px solid #3FA321;
+  }
+
+  #search-block-form label {
+    display: none;
+  }
+
+  #IEroot .block-search input.form-submit, #IEroot #search-form input.form-submit, #IEroot  #search-theme-form input.form-submit{
+  width: 34px;
+  font-size: 0;
+  color: #fff;
+  text-align: right;
+  }
+
+  #IEroot #search-form .search-advanced input.form-submit, #IEroot #search-theme-form .search-advanced input.form-submit {
+  width: 44px;
+  text-indent: 0;
+  }
+
 
   #edit-search-theme-form-1-wrapper label /* Label that says "Search this site:" */
   {
@@ -322,15 +391,18 @@
 /** subnavbar **/
   #subnavbar
   {
+  z-index: 0;
   }
   
 
   #subnavbar-inner
   {
+  z-index: 0;
   }    
   #subnavbar-inner .block p
   {
   margin: 0em;
+  z-index: 0;
   }   
 
 /** sidebar-left **/
