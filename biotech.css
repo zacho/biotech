@@ -34,11 +34,12 @@
     margin: 0;
     background: #fff url("images/biotech-bg.png") repeat-x 0 0;
     padding: 0px;
+    color: #02243c;
   }
 
   #page
   {
-  background: #fff;
+  background: #fff url("images/biotech-pagebg.png") repeat-x 0 200px;
   }
 
   #page-inner
@@ -90,8 +91,8 @@
 
   #topbar-inner li a
   {
-  height: 1.6em;
-  line-height: 1.4em;
+  height: 1.4em;
+  line-height: 1.6em;
   float: left;
   width: 5em;
   display: block;
@@ -165,11 +166,13 @@
 /** content **/
   #content
   {
+
   }
 
   #content-inner
   {
-  padding: 5px 15px 15px 15px;
+
+  padding: 15px 10px 10px 10px;
   }
 
   #mission /* The mission statement of the site (displayed on homepage) */
@@ -310,7 +313,7 @@
   color: #fff;
   }  
   
-  #search-block-form .form-item input, #search-theme-form .form-item input
+  #search-theme-form .form-item input
   {
   vertical-align: top;
   margin-top: 1px;
@@ -318,6 +321,17 @@
   height: 19px;
   width: 175px;
   padding: 0px;
+  border: 1px solid #002D61;
+  }
+  
+  #search-block-form .form-item input
+  {
+  vertical-align: top;
+  margin-top: 1px;
+  padding: 0px;
+  height: 19px;
+  padding: 0px;
+  width: 80%;
   border: 1px solid #002D61;
   }
   
@@ -403,15 +417,42 @@
   {
   margin: 0em;
   z-index: 0;
-  }   
+  } 
+
+  #subnavbar-inner .block
+  {
+  margin: 0em;
+  z-index: 0;
+  }     
+
+  #subnavbar-inner .block h2.title {
+  background:transparent url(images/biotech-headingbg.png) no-repeat scroll 0 0;
+  border:0px;
+  color:#fff;
+  font-size:1.8em;
+  font-weight:normal;
+  height:60px;
+  margin:0px 0 0px;
+  padding:6px 0 0 20px;
+}
+
+  #subnavbar-inner .block .headingimg{
+  margin-top: -66px;
+  float: right;
+}
+
 
 /** sidebar-left **/
   #sidebar-left
   {
+
   }
 
   #sidebar-left-inner
   {
+
+    padding: 15px 10px 10px 10px;
+
   }
 
 /** sidebar-right **/
@@ -421,6 +462,7 @@
 
   #sidebar-right-inner
   {
+  padding: 15px 10px 10px 10px;
   }
 
 /** footer **/
@@ -443,6 +485,7 @@
 /** footerlinks **/
   #footerlinks
   {
+    background: #fff;
     border: 2px solid #44b025;
     padding: 10px 10px 10px 30px;
   }
@@ -453,9 +496,13 @@
   
   #footerlinks-inner h2.title 
   {
-  color: #8fd07c;
+  background: transparent none;
   font-weight: normal;
   font-size: 1.0em;
+  color: #8fd07c;
+  border: 0px;
+  margin-top: 0;
+  padding: 0;
   }  
 
   #footerlinks-inner #block-menu-menu-home-link 
@@ -466,7 +513,7 @@
   
   #footerlinks-inner  #block-menu-primary-links
   {
-  margin-top: 1.4em;
+  margin-top: 1.8em;
   margin-bottom: 0em;
   }
   
@@ -493,6 +540,11 @@
    clear: both;
    margin: 0.5em 0 0 0;
   }
+  
+  #footerlinks-inner #block-menu-primary-links ul li a.active
+  {
+   font-weight: bold;
+  }  
   
   #footerlinks-inner #block-menu-primary-links ul li ul li.first
   {
@@ -755,7 +807,17 @@
 
   .block h2.title /* Block title */
   {
-  }
+    background: #fff url("images/cbmr-front-titles.png") no-repeat 0 0;
+    border: 1px solid #44b025;
+    height: 20px;
+    color: #4488c7;
+    font-size: 1em;
+    font-weight: normal;
+    padding: 2px 0 0px 10px;
+    margin: 2px 0 4px 0;
+}
+
+
 
   .block .content /* Block's content wrapper */
   {
@@ -1011,3 +1073,26 @@
     padding-right: 1em;
     border-bottom: 3px solid #ccc;
   }
+
+/** Menu Block **/
+
+.menu-block-1.menu-name-primary-links ul li
+{
+   list-style-type: none;
+   list-style-image: none;
+   padding: 5px;
+}
+
+.menu-block-1.menu-name-primary-links ul {
+margin:0em 0;
+}
+
+
+/** Heading View **/
+.headingbg
+{
+   background: transparent url('images/biotech-headingbg.png') no-repeat top left;
+   margin: 0;
+   padding: 0;
+   height: 66px;
+}

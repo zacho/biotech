@@ -17,34 +17,28 @@
 
 .front #sidebar-left-inner
   {
-    margin: 0 20px 0 0;
+    margin: 15px 10px 0 0;
     padding:0px 0px 10px 10px;
   }
   
-.front #sidebar-right
-  {
-   display: none;
-  }  
-  
+
   
 .front .front-left-img  {
     background: #fff url("images/cbmr-front-left-top.jpg") no-repeat 0 0;
     border: 1px solid #44b025;
-    width: 458px;
     height: 57px;
 }
 
 .front .front-right-img  {
     background: #fff url("images/cbmr-front-right-top.jpg") no-repeat 0 0;
     border: 1px solid #44b025;
-    width: 458px;
     height: 57px;
 }
 
 
 
 .front #content-inner {
-padding:0px 15px 10px 10px;
+padding:15px 10px 10px 10px;
 }
 
 
@@ -52,15 +46,15 @@ padding:0px 15px 10px 10px;
 .front .view-front-left-teaser .views-field-title, .front .view-front-right-node .views-field-title-first  {
     background: #fff url("images/cbmr-front-titles.png") no-repeat 0 0;
     border: 1px solid #44b025;
-    width: 450px;
-    height: 20px;
+    height: 18px;
     margin-top: 2px;
     color: #4488c7;
-    padding: 2px 0 0 8px;
+    padding: 2px 0 2px 8px;
 }
 
 .front .view-front-right-node .views-field-title, .front .view-front-left-teaser .views-field-teaser {
 padding-top: 1em;
+
 }
 
 .front .view-front-right-node .views-field-teaser, .front .view-front-left-teaser .views-field-teaser {
@@ -75,6 +69,7 @@ margin: 0;
 float: right;
 display: inline;
 padding: 2px 0 0 4px;
+
 }
 
 .front .view-front-right-node .readmore-img, .front .view-front-left-teaser  .readmore-img {
@@ -83,4 +78,34 @@ width: 54px;
 height: 24px;
 display: inline-block;
 float: right;
+    margin-bottom: 5px;
 }
+
+
+.front.two-sidebars  #content 
+  {
+  width: 320px;
+  margin-left: 320px; /* The width of #sidebar-left */
+  margin-right: -640px; /* Negative value of #content's width + left margin. */
+  }
+
+.front.two-sidebars  #sidebar-left 
+  {
+  width: 320px;
+  }
+
+/** sidebar-right **/
+.front  #sidebar-right
+  {
+    float: left;
+    width: 320px;
+    margin-left: 640px; /* Width of content + sidebar-left. */
+    margin-right: -960px; /* Negative value of #sidebar-right's width + left margin. */
+    padding: 0; /* DO NOT CHANGE. Add padding or margin to #sidebar-right-inner. */
+  }
+
+.front  #sidebar-right-inner
+  {
+    margin: 15px 10px 0 10px;
+    padding: 0;
+  }

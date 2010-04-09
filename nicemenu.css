@@ -40,7 +40,6 @@
 
 .block-nice_menus {
 margin-bottom: 0;
-
 }
 
 
@@ -176,6 +175,7 @@ ul.nice-menu-down {
   float: left;
   border: 0;
   z-index: 9999;
+  margin-top: 5px;
 }
 
 ul.nice-menu-down li {
@@ -211,14 +211,15 @@ ul.nice-menu-down li ul li ul,
 }
 
 ul.nice-menu-down .menuparent a {
-  padding: 0.5em 0 0.5em 0;
+  padding: 0.6em 0 0.45em 0;
   width: 9.5em;
   text-align: center;
-  z-index: 9999;  
+  z-index: 9999;
+  vertical-align: middle;
   }
 
 ul.nice-menu-down .menuparent ul li a {
-  padding: 0.5em 2.1em 0.5em 0.9em;
+  padding: 0.65em 2.1em 0.5em 0.9em;
   text-align: left;
   z-index: 9999;  
   }
@@ -286,11 +287,11 @@ color: #172154;
 }
 
 #navbar-inner .nice-menu-down ul li a.active{
-color:#172154;
+color:#000;
 }
 
 #navbar-inner .nice-menu-down ul li a{
-color:#000;
+color:#172154;
 font-weight: normal;
 }
 
@@ -299,11 +300,11 @@ color:#000;
 }
 
 #navbar-inner .nice-menu-down ul li a:hover{
-color:#172154;
+color:#000;
 }
 
 #navbar-inner .nice-menu-down a:hover{
-color:#172154;
+
 }
 
 #navbar-inner .nice-menu-down a.active{

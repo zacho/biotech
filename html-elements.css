@@ -63,7 +63,7 @@
 
      */
 
-    font-family: Tahoma, Verdana, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+    font-family: Helvetica, Arial, "Bitstream Vera Sans", sans-serif;
   }
 
   pre, code
@@ -75,7 +75,9 @@
 /** headings **/
   h1
   {
-    font-size: 2em;
+    font-size: 1.4em;
+    font-weight: normal;
+    color: #145f08;
     line-height: 1.3em;
     margin-top: 0;
     margin-bottom: 0.5em; /* 0.5em is equavalent to 1em in the page's base font.
@@ -188,14 +190,19 @@
   /* The order of link states are based on Eric Meyer's article:
    * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
    */
+  a {
+  text-decoration: none;
+  }
+
   a:link
   {
   text-decoration: none;
-  color: #0000EE;
+    color: #6699cc;
   }
 
   a:visited
   {
+      color: #6699cc;
   }
 
   a:hover,
@@ -205,12 +212,14 @@
 
   a:active
   {
-  color: #0000EE;
+
+  text-decoration: none;
   }
   
   li a.active /* The active item in a Drupal menu */
   {
-    color: #0000EE;
+  color: #6699cc;
+  color: #000;
   }
   
   
@@ -223,7 +232,7 @@
       color: #fff;
   }
 
-  #navbar-inner a:visited, #topbar-inner a:visited,  
+  #navbar-inner a:visited, #topbar-inner a:visited  
   {
       color: #fff;
   }
@@ -246,6 +255,40 @@
   #topbar-inner li a.active  
   {
     color: #fff;
+  }
+
+/** footer links **/
+  /* The order of link states are based on Eric Meyer's article:
+   * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
+   */
+  #footerlinks a {
+  text-decoration: none;
+  }
+
+  #footerlinks   a:link
+  {
+  text-decoration: none;
+    color: #0000EE;
+  }
+
+  #footerlinks   a:visited
+  {
+      color: #0000EE;
+  }
+
+  #footerlinks   a:hover,
+  #footerlinks   a:focus
+  {
+  }
+
+  #footerlinks   a:active
+  {
+  text-decoration: none;
+  }
+  
+  #footerlinks   li a.active /* The active item in a Drupal menu */
+  {
+  color: #0000EE;
   }
 
 
