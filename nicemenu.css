@@ -77,11 +77,14 @@ ul.nice-menu li {
   /* Padding rules are needed to deal with Garland's header line-height. */
   padding-top: 0.1em;
   padding-bottom: 0.1em;
-  background: #eee;
+  background: transparent;
 }
 
 ul.nice-menu a {
-  padding: 0.5em 0.9em 0.5em 0.9em;
+padding:0.6em 0 0.45em;
+text-align:center;
+vertical-align:middle;
+width:9.5em;
 }
 
 

@@ -134,6 +134,18 @@
     padding: 0 0 0 2em;
   }
 
+  .block .book-block-menu ul, /* Drupal overrides */
+  .item-list .book-block-menu ul
+  {
+    margin: 0em 0;
+    padding: 0 0 0 2em;
+  }
+
+
+  .block-book .content {
+  margin: 1em 0;
+  }
+
   ul ul, ul ol,
   ol ol, ol ul,
   .block ul ul, .block ul ol,

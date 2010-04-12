@@ -505,7 +505,7 @@
   padding: 0;
   }  
 
-  #footerlinks-inner #block-menu-menu-home-link 
+  #footerlinks-inner #block-menu-menu-home
   {
   float: left;
   width: 6em;
@@ -517,13 +517,13 @@
   margin-bottom: 0em;
   }
   
-  #footerlinks-inner  #block-menu-primary-links ul li, #footerlinks-inner #block-menu-menu-home-link ul li
+  #footerlinks-inner  #block-menu-primary-links ul li, #footerlinks-inner #block-menu-menu-home ul li
   {
    list-style-type: none;
    list-style-image: none;
   }  
 
-  #footerlinks-inner  #block-menu-primary-links ul,  #footerlinks-inner #block-menu-menu-home-link ul
+  #footerlinks-inner  #block-menu-primary-links ul,  #footerlinks-inner #block-menu-menu-home ul
   {
   margin: 0;
   padding: 0;

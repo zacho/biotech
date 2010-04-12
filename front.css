@@ -41,7 +41,14 @@
 padding:15px 10px 10px 10px;
 }
 
+.front .view-front-left-teaser {
+margin-bottom: 40px;
+}
 
+
+.front .view-front-right-node {
+margin-bottom: 40px;
+}
 
 .front .view-front-left-teaser .views-field-title, .front .view-front-right-node .views-field-title-first  {
     background: #fff url("images/cbmr-front-titles.png") no-repeat 0 0;
@@ -67,9 +74,7 @@ margin: 0;
 
 .front .view-front-right-node .views-field-view-node, .front .view-front-left-teaser  .views-field-view-node {
 float: right;
-display: inline;
 padding: 2px 0 0 4px;
-
 }
 
 .front .view-front-right-node .readmore-img, .front .view-front-left-teaser  .readmore-img {
