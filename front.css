@@ -1,3 +1,15 @@
+/* Views override for admin links acessability problems*/
+
+.front div.block.with-block-editing div.edit {
+  z-index: 201;
+  }
+
+.front #content div.view div.views-admin-links {
+  width:auto;
+  }
+  
+
+
 .front #content 
   {
   margin-left:480px;
@@ -19,6 +31,7 @@
   {
     margin: 15px 10px 0 0;
     padding:0px 0px 10px 10px;
+    background-image: none;
   }
   
 
@@ -38,6 +51,7 @@
 
 
 .front #content-inner {
+background-image: none;
 padding:15px 10px 10px 10px;
 }
 
