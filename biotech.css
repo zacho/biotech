@@ -50,7 +50,11 @@
 /** topbar **/
   #topbar
   {
-  
+  }
+
+  #topbar-inner div.block.with-block-editing div.edit
+  {
+  display:none;
   }
 
   #topbar-inner
@@ -286,6 +290,11 @@
   height: 32px;
   z-index: 9999;
   font-weight: bold;
+  }
+
+  #navbar-inner div.block.with-block-editing div.edit
+  {
+  display:none;
   }
 
   #navbar-inner
@@ -1124,3 +1133,7 @@ padding-left: 10px;
    padding: 0;
    height: 66px;
 }
+
+
+
+
